@@ -1,0 +1,9 @@
+runfile('oddeven_test.py')
+
+Enter a number: 57
+57 is odd
+
+runfile('oddeven_test.py')
+
+Enter a number: 78
+78 is even
