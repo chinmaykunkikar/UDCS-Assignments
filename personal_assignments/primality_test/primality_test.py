@@ -1,3 +1,7 @@
+'''
+author: @chinmaykunkikar
+'''
+
 def isPrime(n) :
     # in case of 0 and -ve numbers
     if (n <= 0) :

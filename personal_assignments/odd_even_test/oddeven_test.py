@@ -1,3 +1,7 @@
+'''
+author: @chinmaykunkikar
+'''
+
 # check whether a given number is or or even
 n = int(input("Enter a number: "))
 if (n % 2) != 0:
