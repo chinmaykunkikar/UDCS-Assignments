@@ -1,3 +1,3 @@
 '''
-author: @chinmaykunkikar
+@author: chinmaykunkikar
 '''

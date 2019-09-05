@@ -1,5 +1,5 @@
 '''
-author: @chinmaykunkikar
+@author: chinmaykunkikar
 '''
 
 def isPrime(n) :

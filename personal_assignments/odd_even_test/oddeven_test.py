@@ -1,5 +1,5 @@
 '''
-author: @chinmaykunkikar
+@author: chinmaykunkikar
 '''
 
 # check whether a given number is or or even
