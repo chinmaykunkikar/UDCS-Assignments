@@ -1,5 +1,3 @@
-# @author: chinmaykunkikar
-
 from fuzzywuzzy import fuzz
 import random
 import string
@@ -10,7 +8,7 @@ alphabet_image = alphabet_list.copy()
 random.shuffle(alphabet_image) # shuffle the list to generate images
 
 # append some common symbols to both the lists
-common_symbols = ['!', '@', '?', '-', ' ']
+common_symbols = ['!', '?', '.', ',', ' ']
 alphabet_list.extend(common_symbols)
 alphabet_image.extend(common_symbols)
 
@@ -23,9 +21,10 @@ print('   Image: ', *alphabet_image, sep='  ')
 print("")
 
 # accept a mapped sentence from user and time it.
-start_time = timeit.default_timer() # start the timer
+time_start = timeit.default_timer() # start the timer
 mapped_sentence = input("Now enter the mapped sentence: ").lower()
-stop_time = timeit.default_timer() # stop the timer
+time_stop = timeit.default_timer() # stop the timer
+time_total = time_stop - time_start
 
 # generate a 'required' sentence, i.e. the answer the user is supposed to enter.
 rq_list = []
@@ -38,9 +37,10 @@ for w in rq_list:
 accuracy = fuzz.ratio(rq_sentence, mapped_sentence)
 
 print("\n-----------------------------------------------------------")
-print("The original sentence you typed is: ", orig_sentence)
-print("Your mapped sentence is: ", mapped_sentence)
-print("The required mapped sentence is: ", rq_sentence)
-print("Time taken: {:.2f} seconds".format(stop_time-start_time))
+print("Original sentence you entered is: ", orig_sentence)
+print("Mapped sentence you entered is: ", mapped_sentence)
+print("Required mapped sentence was: ", rq_sentence)
+print("Time taken: {:.2f} seconds".format(time_total))
 print("You are {}% accurate.".format(accuracy))
 print("-----------------------------------------------------------")
+print("")
