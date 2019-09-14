@@ -1,4 +1,4 @@
-# Sentence mapping
+# Lerning curve analysis (Sentence mapping)
 
 Objective of the assignment is to come up with an test to intuitively calculate **learning curve** of a person based on how much time it takes for a person to map a sentence according to a random set of alphabet image.
 
