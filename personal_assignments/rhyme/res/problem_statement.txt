@@ -1,0 +1,5 @@
+Write a program to 
+1. Create a rhymic dictionary
+2. Compute syllable in a given word (done)
+3. Select a combination of string that comprised of the number of syllables as specified by a user.
+4. Select strings of allied and opposite words of a given word
