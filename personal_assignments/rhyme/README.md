@@ -63,4 +63,6 @@ DIAMONDS D AY1 M AH0 N D Z
 * The dictionary can be imported from `nltk` but it has been processed heavily by nltk. Also the corpus file `cmudict-0.7b.dict` is quiet old. This also has comments `;;;` that contaminate the corpus.
 * There is a newer version available from [cmusphinx's github repo](https://github.com/cmusphinx/cmudict). This [dictionary](https://github.com/cmusphinx/cmudict/blob/master/cmudict.dict) has around 900 new entries of words.
 * With help of a tool [cmudict-tools](https://github.com/rhdunn/cmudict-tools) it is further possible to process and cleanse the corpus.
-* `cmudict-tools --remove-duplicate-contexts --format cmudict-new print cmudict.dict` formats the dictionary to make it usable.
+* `cmudict-tools --format cmudict-new print cmudict.dict` formats the dictionary to a new format.
+* With the help of `sed '/($variant)/' cmudict`, I was able to remove all the variants of words.
+* This makes the output like nltk's corpus.
